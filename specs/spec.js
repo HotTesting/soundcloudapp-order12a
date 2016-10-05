@@ -1,0 +1,39 @@
+'use strict';
+
+// describe('Todos Application', function () {
+//     it('should be able to create new task', function () {
+//         var todosPage = new TodosPage();
+//         var targetTask = 'task_1';
+//         todosPage.open();
+//
+//         todosPage.createTask(targetTask);
+//
+//         expect(todosPage.isTaskPresent(targetTask))
+//     });
+// });
+
+
+
+describe('angularjs homepage', function() {
+    it('should greet the named user', function() {
+        var angularHomepage = new AngularHomepage();
+        angularHomepage.get();
+
+        angularHomepage.setName('Julie');
+
+        expect(angularHomepage.getGreeting()).toEqual('Hello Julie!');
+    });
+});
+
+// describe('Protractor Demo App', function() {
+//     it('should add one and two', function() {
+//         browser.get('http://juliemr.github.io/protractor-demo/');
+//         element(by.model('first')).sendKeys(1);
+//         element(by.model('second')).sendKeys(2);
+//
+//         element(by.id('gobutton')).click();
+//
+//         expect(element(by.binding('latest')).getText()).
+//         toEqual('5'); // This is wrong!
+//     });
+// });
